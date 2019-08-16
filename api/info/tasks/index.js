@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const superagent = require('superagent')
+const axios = require('axios')
 
 const { authMiddleware } = require('../../lib/jwt')
 
@@ -18,11 +18,9 @@ module.exports = authMiddleware(async (req, res) => {
         issuer: 'https://auth.t-fk.no'
       }
     )
-    const data = await superagent
-      .get(`https://tasks.t-fk.no/user/${userId}`)
-      .set({ Authorization: token })
-    const parsed = JSON.parse(data.text)
-    res.json(parsed.data)
+    axios.defaults.headers.common['Authorization'] = token
+    const { data } = await axios.get(`https://tasks.t-fk.no/user/${userId}`)
+    res.json(data.data)
   } catch (error) {
     res.status(500)
     res.json({ error: error.message })

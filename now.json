@@ -34,11 +34,11 @@
     }
   ],
   "env": {
-    "AUTH_SERVICE_URL": "@portalen-auth-service-url",
-    "ENCRYPTOR_SECRET": "@portalen-jwt-secret",
     "API_JWT_SECRET": "@portalen-jwt-key",
-    "SESSION_STORAGE_URL": "@portalen-session-uri",
     "PORTALEN_TASKS_JWT_KEY": "@portalen-tasks-jwt-key",
-    "DATABASE_URI": "@portalen-db-uri"
+    "DATABASE_URI": "@portalen-db-uri",
+    "MOA_TENANT_ID": "@portalen-tendant-id",
+    "MOA_CLIENT_ID": "@portalen-client-id",
+    "MOA_CLIENT_SECRET": "@portalen-client-secret"
   }
 }

@@ -1,33 +1,38 @@
-const { verifyRemoteToken, createToken } = require('../lib/jwt')
-const { getRoles } = require('../lib/infoData')
+const { stringify } = require('querystring')
+const uuid = require('uuid/v4')
+const cookie = require('cookie')
+
+const { loadConfig } = require('../lib/authConfig')
 
 module.exports = async (req, res) => {
-  const { jwt, returnUrl } = req.query
-  if (returnUrl) {
-    // Send user to auth-serive
+  const { baseDomain } = req.query
+  if (baseDomain) {
+    const nonce = uuid()
+    res.setHeader(
+      'Set-Cookie',
+      `${cookie.serialize('baseDomain', baseDomain)};${cookie.serialize(
+        'nonce',
+        nonce
+      )}`
+    )
+    res.json({
+      baseDomain,
+      nonce
+    })
+  } else {
+    const { baseDomain, nonce } = req.cookies
+    const { metadata, auth } = await loadConfig()
+    const params = {
+      ...auth,
+      nonce,
+      state: nonce,
+      redirect_uri: `${baseDomain}/api/callback`
+    }
     res.status(301)
     res.setHeader(
       'Location',
-      `${process.env.AUTH_SERVICE_URL}?origin=${returnUrl}/api/auth`
+      `${metadata.authorization_endpoint}?${stringify(params)}`
     )
     return res.end()
-  }
-  if (jwt) {
-    // Returned from auth-service
-    try {
-      const data = await verifyRemoteToken(jwt)
-      const roles = await getRoles('Sentraladministrasjonen')
-      const token = createToken({
-        ...data,
-        roles,
-        rolesJoined: roles.join() // Needed??
-      })
-      res.status(301)
-      res.setHeader('Location', `/loadauth/${token}`)
-      return res.end()
-    } catch (error) {
-      res.status(500)
-      res.json({ error: error.message })
-    }
   }
 }

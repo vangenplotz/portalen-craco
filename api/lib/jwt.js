@@ -1,6 +1,4 @@
 const jwt = require('jsonwebtoken')
-const encryptor = require('simple-encryptor')(process.env.ENCRYPTOR_SECRET)
-const superagent = require('superagent')
 
 function createToken(data) {
   return jwt.sign(data, process.env.API_JWT_SECRET, {
@@ -41,41 +39,7 @@ const authMiddleware = func => {
   }
 }
 
-function verifyRemoteToken(token) {
-  return new Promise((resolve, reject) => {
-    if (!token) {
-      reject(new Error('Missing required signin jwt'))
-    } else {
-      jwt.verify(token, process.env.API_JWT_SECRET, (error, decoded) => {
-        if (error) {
-          reject(error)
-        } else {
-          const decrypted = encryptor.decrypt(decoded.data)
-          const sessionUrl = `${process.env.SESSION_STORAGE_URL}/${decrypted.session}`
-          console.log('sessionUrl', sessionUrl)
-          superagent
-            .get(sessionUrl)
-            .then(result => {
-              const user = encryptor.decrypt(result.body.value)
-              const data = {
-                cn: user.displayName || user.cn || '',
-                userId: user.sAMAccountName || user.uid || '',
-                company: user.company || 'Sentraladministrasjonen',
-                mail: user.mail || 'post@tfk.no'
-              }
-              resolve(data)
-            })
-            .catch(error => {
-              reject(error)
-            })
-        }
-      })
-    }
-  })
-}
-
 module.exports = {
-  verifyRemoteToken,
   createToken,
   decodeToken,
   authMiddleware

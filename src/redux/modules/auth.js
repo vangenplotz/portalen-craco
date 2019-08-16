@@ -28,9 +28,10 @@ export default function reducer(state = initialState, action = {}) {
   }
 }
 
-export function load() {
+export function load(domain) {
   return {
     types: [LOAD, LOAD_SUCCESS, LOAD_FAIL],
-    promise: client => client.get('/api/user')
+    promise: client =>
+      client.post(`/api/auth?baseDomain=${encodeURIComponent(domain)}`)
   }
 }

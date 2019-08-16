@@ -1,0 +1,682 @@
+[
+  {
+    "id": "alle",
+    "name": "Alle",
+    "groups": [
+      "alle"
+    ]
+  },
+  {
+    "id": "administrasjonen",
+    "name": "Administrasjonen",
+    "groups": [
+      "alle",
+      "administrasjonen"
+    ]
+  },
+  {
+    "id": "skole",
+    "name": "Skole",
+    "groups": [
+      "alle",
+      "skole"
+    ]
+  },
+  {
+    "id": "tannhelse",
+    "name": "Tannhelse",
+    "groups": [
+      "alle",
+      "tannhelse"
+    ]
+  },
+  {
+    "id": "administrativledelse",
+    "name": "Administrativ ledelse",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "administrativledelse"
+    ]
+  },
+  {
+    "id": "aust-telemarktannhelsedistrikt",
+    "name": "Aust-Telemark tannhelsedistrikt",
+    "groups": [
+      "alle",
+      "aust-telemarktannhelsedistrikt",
+      "tannhelse"
+    ]
+  },
+  {
+    "id": "brekkebyvgs",
+    "name": "Brekkeby vgs",
+    "groups": [
+      "alle",
+      "brekkebyvgs",
+      "skole"
+    ]
+  },
+  {
+    "id": "brekkebyvideregaendeskole",
+    "name": "Brekkeby videregående skole",
+    "groups": [
+      "alle",
+      "brekkebyvideregaendeskole",
+      "skole"
+    ]
+  },
+  {
+    "id": "btvinternasjonalgruppe",
+    "name": "BTV internasjonal gruppe",
+    "groups": [
+      "alle",
+      "btvinternasjonalgruppe"
+    ]
+  },
+  {
+    "id": "bamblevgsavdgrasmyr",
+    "name": "Bamble vgs avd grasmyr",
+    "groups": [
+      "alle",
+      "bamblevgsavdgrasmyr",
+      "skole"
+    ]
+  },
+  {
+    "id": "bamblevgs.avd.croftholmen",
+    "name": "Bamble vgs. avd. Croftholmen",
+    "groups": [
+      "alle",
+      "bamblevgs.avd.croftholmen",
+      "skole"
+    ]
+  },
+  {
+    "id": "bamblevgs.avd.grasmyr",
+    "name": "Bamble vgs. avd. Grasmyr",
+    "groups": [
+      "alle",
+      "bamblevgs.avd.grasmyr",
+      "skole"
+    ]
+  },
+  {
+    "id": "bamblevideregaendeskole",
+    "name": "Bamble videregående skole",
+    "groups": [
+      "alle",
+      "bamblevideregaendeskole",
+      "skole"
+    ]
+  },
+  {
+    "id": "bovidaregaandeskule",
+    "name": "Bø vidaregåande skule",
+    "groups": [
+      "alle",
+      "bovidaregaandeskule",
+      "skole"
+    ]
+  },
+  {
+    "id": "drangedaltannklinikk",
+    "name": "Drangedal tannklinikk",
+    "groups": [
+      "alle",
+      "drangedaltannklinikk",
+      "tannhelse"
+    ]
+  },
+  {
+    "id": "driftsavdelingen",
+    "name": "driftsavdelingen",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "driftsavdelingen"
+    ]
+  },
+  {
+    "id": "edlandtannklinikk",
+    "name": "Edland tannklinikk",
+    "groups": [
+      "alle",
+      "edlandtannklinikk",
+      "tannhelse"
+    ]
+  },
+  {
+    "id": "fagskolentelemark",
+    "name": "Fagskolen Telemark",
+    "groups": [
+      "alle",
+      "skole",
+      "fagskolentelemark",
+      "telemarktekniskefagskole"
+    ]
+  },
+  {
+    "id": "fylkesbibliotekettelemarksbiblio",
+    "name": "Fylkesbiblioteket Telemarksbiblio",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "fylkesbibliotekettelemarksbiblio"
+    ]
+  },
+  {
+    "id": "fylkestannlegenskontor",
+    "name": "Fylkestannlegens kontor",
+    "groups": [
+      "alle",
+      "fylkestannlegenskontor",
+      "tannhelse"
+    ]
+  },
+  {
+    "id": "hjalmarjohansenvgs",
+    "name": "Hjalmar Johansen vgs",
+    "groups": [
+      "alle",
+      "hjalmarjohansenvgs",
+      "skole"
+    ]
+  },
+  {
+    "id": "karrieresenteret",
+    "name": "Karrieresenteret",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "karrieresenteret"
+    ]
+  },
+  {
+    "id": "klosterskogenvgs",
+    "name": "Klosterskogen vgs",
+    "groups": [
+      "alle",
+      "klosterskogenvgs",
+      "skole"
+    ]
+  },
+  {
+    "id": "kragerovgs",
+    "name": "KRAGERØ VGS",
+    "groups": [
+      "alle",
+      "kragerovgs",
+      "skole"
+    ]
+  },
+  {
+    "id": "kragerotannklinikk",
+    "name": "Kragerø tannklinikk",
+    "groups": [
+      "alle",
+      "kragerotannklinikk",
+      "tannhelse"
+    ]
+  },
+  {
+    "id": "kragerovideregaendeskole",
+    "name": "Kragerø videregående skole",
+    "groups": [
+      "alle",
+      "kragerovideregaendeskole",
+      "skole"
+    ]
+  },
+  {
+    "id": "kursbruker",
+    "name": "kursbruker",
+    "groups": [
+      "alle",
+      "kursbruker"
+    ]
+  },
+  {
+    "id": "notoddenvgs",
+    "name": "NOTODDEN VGS",
+    "groups": [
+      "alle",
+      "notoddenvgs",
+      "skole"
+    ]
+  },
+  {
+    "id": "nomevgs.avd.lunde",
+    "name": "Nome vgs. avd. Lunde",
+    "groups": [
+      "alle",
+      "nomevgs.avd.lunde",
+      "skole"
+    ]
+  },
+  {
+    "id": "nomevgs.avd.sove",
+    "name": "Nome vgs. avd. Søve",
+    "groups": [
+      "alle",
+      "nomevgs.avd.sove",
+      "skole"
+    ]
+  },
+  {
+    "id": "nomevideregaendeskole",
+    "name": "Nome videregående skole",
+    "groups": [
+      "alle",
+      "nomevideregaendeskole",
+      "skole"
+    ]
+  },
+  {
+    "id": "norgeshusflidslag",
+    "name": "Norges Husflidslag",
+    "groups": [
+      "alle",
+      "norgeshusflidslag"
+    ]
+  },
+  {
+    "id": "notoddentannklinikk",
+    "name": "Notodden tannklinikk",
+    "groups": [
+      "alle",
+      "notoddentannklinikk",
+      "tannhelse"
+    ]
+  },
+  {
+    "id": "notoddenvideregaendeskole",
+    "name": "Notodden videregående skole",
+    "groups": [
+      "alle",
+      "notoddenvideregaendeskole",
+      "skole"
+    ]
+  },
+  {
+    "id": "okos-oppleringskontoretforoffentligsektor",
+    "name": "OKOS - Opplæringskontoret for Offentlig sektor",
+    "groups": [
+      "alle",
+      "okos-oppleringskontoretforoffentligsektor"
+    ]
+  },
+  {
+    "id": "oppleringsetaten",
+    "name": "Opplæringsetaten",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "oppleringsetaten"
+    ]
+  },
+  {
+    "id": "oppleringskontoretforoffentligsektor",
+    "name": "Opplæringskontoret for offentlig sektor",
+    "groups": [
+      "alle",
+      "oppleringskontoretforoffentligsektor"
+    ]
+  },
+  {
+    "id": "oralkirurgiskklinikktelemark",
+    "name": "Oralkirurgisk klinikk Telemark",
+    "groups": [
+      "alle",
+      "oralkirurgiskklinikktelemark",
+      "tannhelse"
+    ]
+  },
+  {
+    "id": "osebakkenvideregaendeskole",
+    "name": "Osebakken videregående skole",
+    "groups": [
+      "alle",
+      "osebakkenvideregaendeskole",
+      "skole"
+    ]
+  },
+  {
+    "id": "porsgrunnvgs",
+    "name": "Porsgrunn vgs",
+    "groups": [
+      "alle",
+      "porsgrunnvgs",
+      "skole"
+    ]
+  },
+  {
+    "id": "politiker",
+    "name": "Politiker",
+    "groups": [
+      "alle",
+      "politiker"
+    ]
+  },
+  {
+    "id": "porsgrunnvideregaendeskole",
+    "name": "Porsgrunn videregående skole",
+    "groups": [
+      "alle",
+      "porsgrunnvideregaendeskole",
+      "skole"
+    ]
+  },
+  {
+    "id": "pptoppf.tjenesten",
+    "name": "PPT/oppf.tjenesten",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "pptoppf.tjenesten"
+    ]
+  },
+  {
+    "id": "regionaletaten",
+    "name": "Regionaletaten",
+    "groups": [
+      "alle",
+      "regionaletaten"
+    ]
+  },
+  {
+    "id": "rjukantannklinikk",
+    "name": "Rjukan tannklinikk",
+    "groups": [
+      "alle",
+      "rjukantannklinikk",
+      "tannhelse"
+    ]
+  },
+  {
+    "id": "rjukanvideregaendeskole",
+    "name": "Rjukan videregående skole",
+    "groups": [
+      "alle",
+      "rjukanvideregaendeskole",
+      "skole"
+    ]
+  },
+  {
+    "id": "skienvgs",
+    "name": "Skien vgs",
+    "groups": [
+      "alle",
+      "skienvgs",
+      "skole"
+    ]
+  },
+  {
+    "id": "seljordtannklinikk",
+    "name": "Seljord tannklinikk",
+    "groups": [
+      "alle",
+      "seljordtannklinikk",
+      "tannhelse"
+    ]
+  },
+  {
+    "id": "sentraladministrasjonen",
+    "name": "Sentraladministrasjonen",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "sentraladministrasjonen"
+    ]
+  },
+  {
+    "id": "servicesenteret",
+    "name": "Servicesenteret",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "servicesenteret"
+    ]
+  },
+  {
+    "id": "siljantannklinikk",
+    "name": "Siljan tannklinikk",
+    "groups": [
+      "alle",
+      "siljantannklinikk",
+      "tannhelse"
+    ]
+  },
+  {
+    "id": "skienvideregaendeskole",
+    "name": "Skien videregående skole",
+    "groups": [
+      "alle",
+      "skienvideregaendeskole",
+      "skole"
+    ]
+  },
+  {
+    "id": "skogmovideregaendeskole",
+    "name": "Skogmo videregående skole",
+    "groups": [
+      "alle",
+      "skogmovideregaendeskole",
+      "skole"
+    ]
+  },
+  {
+    "id": "spesialisttannklinikken",
+    "name": "Spesialisttannklinikken",
+    "groups": [
+      "alle",
+      "spesialisttannklinikken",
+      "tannhelse"
+    ]
+  },
+  {
+    "id": "stathelletannklinikk",
+    "name": "Stathelle tannklinikk",
+    "groups": [
+      "alle",
+      "stathelletannklinikk",
+      "tannhelse"
+    ]
+  },
+  {
+    "id": "tfkadministrasjon",
+    "name": "TFK Administrasjon",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "tfkadministrasjon"
+    ]
+  },
+  {
+    "id": "tfkadministrasjonen",
+    "name": "TFK Administrasjonen",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "tfkadministrasjonen"
+    ]
+  },
+  {
+    "id": "tfkarealtransportreg.utv.",
+    "name": "TFK areal, transport, reg.utv.",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "tfkarealtransportreg.utv."
+    ]
+  },
+  {
+    "id": "tfkeiendom",
+    "name": "TFK eiendom",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "tfkeiendom"
+    ]
+  },
+  {
+    "id": "tfkkulturavdeling",
+    "name": "TFK kulturavdeling",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "tfkkulturavdeling"
+    ]
+  },
+  {
+    "id": "tannklinikkenmidttelemark",
+    "name": "Tannklinikken Midt Telemark",
+    "groups": [
+      "alle",
+      "tannhelse",
+      "tannklinikkenmidttelemark"
+    ]
+  },
+  {
+    "id": "tannklinikkenporsgrunn",
+    "name": "Tannklinikken Porsgrunn",
+    "groups": [
+      "alle",
+      "tannhelse",
+      "tannklinikkenporsgrunn"
+    ]
+  },
+  {
+    "id": "tannklinikkenskien",
+    "name": "Tannklinikken Skien",
+    "groups": [
+      "alle",
+      "tannhelse",
+      "tannklinikkenskien"
+    ]
+  },
+  {
+    "id": "teameiendom",
+    "name": "Team eiendom",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "teameiendom"
+    ]
+  },
+  {
+    "id": "telemarkkommunerevisjoniks",
+    "name": "Telemark kommunerevisjon IKS",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "tekomrev.no"
+    ]
+  },
+  {
+    "id": "telemarktekniskefagskole",
+    "name": "Telemark tekniske fagskole",
+    "groups": [
+      "alle",
+      "skole",
+      "fagskolentelemark",
+      "telemarktekniskefagskole"
+    ]
+  },
+  {
+    "id": "treungentannklinikk",
+    "name": "Treungen tannklinikk",
+    "groups": [
+      "alle",
+      "tannhelse",
+      "treungentannklinikk"
+    ]
+  },
+  {
+    "id": "ulefosstannklinikk",
+    "name": "Ulefoss tannklinikk",
+    "groups": [
+      "alle",
+      "tannhelse",
+      "ulefosstannklinikk"
+    ]
+  },
+  {
+    "id": "vest-telemarktannhelsedistrikt",
+    "name": "Vest-Telemark tannhelsedistrikt",
+    "groups": [
+      "alle",
+      "tannhelse",
+      "vest-telemarktannhelsedistrikt"
+    ]
+  },
+  {
+    "id": "vest-telemarkvgs.avd.dalen",
+    "name": "Vest-Telemark vgs. avd. Dalen",
+    "groups": [
+      "alle",
+      "skole",
+      "vest-telemarkvgs.avd.dalen"
+    ]
+  },
+  {
+    "id": "vest-telem.vgs.avd.seljord",
+    "name": "Vest-Telem. vgs. avd. Seljord",
+    "groups": [
+      "alle",
+      "skole",
+      "vest-telem.vgs.avd.seljord"
+    ]
+  },
+  {
+    "id": "vigoiks",
+    "name": "Vigo IKS",
+    "groups": [
+      "alle",
+      "vigoiks"
+    ]
+  },
+  {
+    "id": "vinjetannklinikk",
+    "name": "Vinje tannklinikk",
+    "groups": [
+      "alle",
+      "tannhelse",
+      "vinjetannklinikk"
+    ]
+  },
+  {
+    "id": "sentraladministrasjon",
+    "name": "sentraladministrasjon",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "sentraladministrasjon"
+    ]
+  },
+  {
+    "id": "talenthuset",
+    "name": "talenthuset",
+    "groups": [
+      "alle",
+      "administrasjonen",
+      "talenthuset"
+    ]
+  },
+  {
+    "id": "telemarkregionalpark",
+    "name": "Telemark Regionalpark",
+    "groups": [
+      "alle",
+      "regionalpark"
+    ]
+  },
+  {
+    "id": "vigodrift",
+    "name": "Vigo IKS",
+    "groups": [
+      "alle",
+      "vigoiks"
+    ]
+  }
+]

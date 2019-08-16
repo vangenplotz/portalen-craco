@@ -8,13 +8,10 @@ module.exports = async (req, res) => {
   const { baseDomain } = req.query
   if (baseDomain) {
     const nonce = uuid()
-    res.setHeader(
-      'Set-Cookie',
-      `${cookie.serialize('baseDomain', baseDomain)};${cookie.serialize(
-        'nonce',
-        nonce
-      )}`
-    )
+    res.setHeader('Set-Cookie', [
+      cookie.serialize('baseDomain', baseDomain),
+      cookie.serialize('nonce', nonce)
+    ])
     res.json({
       baseDomain,
       nonce

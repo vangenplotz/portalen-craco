@@ -25,15 +25,18 @@ async function validateToken({ data, config }) {
 */
 
 async function getToken({ code, config }) {
-  const payload = stringify({
+  const payload = {
     client_id: config.auth.client_id,
     code,
     redirect_uri: config.auth.redirect_uri,
     resource: 'https://graph.microsoft.com',
     client_secret: process.env.MOA_CLIENT_SECRET,
     grant_type: 'authorization_code'
-  })
-  const { data } = await axios.post(config.metadata.token_endpoint, payload)
+  }
+  const { data } = await axios.post(
+    config.metadata.token_endpoint,
+    stringify(payload)
+  )
   return data
 }
 
@@ -77,6 +80,6 @@ module.exports = async (req, res) => {
     return res.end()
   } catch (error) {
     res.status(500)
-    res.json({ error: error.message })
+    res.json({ error: error.message, details: error })
   }
 }

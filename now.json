@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "name": "portalen-craco",
+  "builds": [
+    {"src": "/api/**/!(lib)/*.js", "use": "@now/node"},
+    {"src": "package.json", "use": "@now/static-build", "config": {"distDir": "build"}}
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/static/(.*)",
+      "headers": { "cache-control": "s-maxage=31536000, immutable" },
+      "continue": true
+    },
+    {
+      "src": "/service-worker.js",
+      "headers": { "cache-control": "s-maxage=0" },
+      "continue": true
+    },
+    {
+      "src": "/sockjs-node/(.*)",
+      "dest": "/sockjs-node/$1"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "headers": { "cache-control": "s-maxage=0" },
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "AUTH_SERVICE_URL": "@portalen-auth-service-url",
+    "ENCRYPTOR_SECRET": "@portalen-jwt-secret",
+    "API_JWT_SECRET": "@portalen-jwt-key",
+    "SESSION_STORAGE_URL": "@portalen-session-uri",
+    "PORTALEN_TASKS_JWT_KEY": "@portalen-tasks-jwt-key",
+    "DATABASE_URI": "@portalen-db-uri"
+  }
+}

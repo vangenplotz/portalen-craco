@@ -1,5 +1,5 @@
 const { authMiddleware } = require('../lib/jwt')
-const superagent = require('superagent')
+const axios = require('axios')
 
 module.exports = authMiddleware(async (req, res) => {
   try {
@@ -7,8 +7,8 @@ module.exports = authMiddleware(async (req, res) => {
     const url = `https://search.service.t-fk.no/api${
       faset && faset !== 'alt-innhold' ? `/${faset}` : ''
     }/search?query=${query}&from=${from}${size ? `&size=${size}` : ''}`
-    const data = await superagent.get(url)
-    res.json(JSON.parse(data.text))
+    const { data } = await axios.get(url)
+    res.json(data)
   } catch (error) {
     res.status(500)
     res.json({ error: error.message })

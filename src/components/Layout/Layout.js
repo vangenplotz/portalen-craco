@@ -158,12 +158,6 @@ const DropMenu = withRouter(({ logout, location }) => {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem component={Link} to="/tilbakemeldinger">
-          <ListItemIcon className={classes.listItemIcon}>
-            <Icon>feedback</Icon>
-          </ListItemIcon>
-          <Typography variant="inherit">Tilbakemeldinger</Typography>
-        </MenuItem>
         <MenuItem component={Link} to="/innstillinger">
           <ListItemIcon className={classes.listItemIcon}>
             <Icon>settings</Icon>

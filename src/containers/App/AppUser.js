@@ -18,20 +18,9 @@ const Settings = loadable(() =>
   import(/* webpackChunkName: "Settings" */ '../Settings/Settings')
 )
 
-const Feedback = () => {
-  return (
-    <>
-      <h1>Feedback</h1>
-    </>
-  )
-}
-const NotFound = () => {
-  return (
-    <>
-      <h1>NotFound</h1>
-    </>
-  )
-}
+const NotFound = loadable(() =>
+  import(/* webpackChunkName: "NotFound" */ '../NotFound/NotFound')
+)
 
 const AppUser = ({ loadUser, authError }) => {
   const { setToken } = useContext(TokenContext)
@@ -50,7 +39,6 @@ const AppUser = ({ loadUser, authError }) => {
     <Layout logout={logoutAction} sidebar={<Sidebar />}>
       <Switch>
         <Route component={Dashboard} path="/" exact />
-        <Route component={Feedback} path="/tilbakemeldinger" />
         <Route component={Settings} path="/innstillinger" />
         <Route component={Search} path="/sok/:query" />
         <Route component={NotFound} />

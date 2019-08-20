@@ -49,8 +49,9 @@
     "start": "react-app-rewired start",
     "now-dev": "BROWSER=none react-scripts start",
     "build": "NODE_ENV=production react-scripts build",
-    "analyze": "ANALYZE=1 react-app-rewired build",
-    "test": "eslint -c .eslintrc src api",
+    "analyze": "ANALYZE=1 NODE_ENV=production react-app-rewired build",
+    "lint": "eslint --no-eslintrc -c .eslintrc src api",
+    "test": "react-scripts test",
     "format": "prettier --write \"src/**/*.js\" \"api/**/*.js\" \"config-overrides.js\"",
     "precommit": "pretty-quick --staged"
   },

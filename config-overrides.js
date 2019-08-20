@@ -13,12 +13,11 @@ const resolveModules = () => config => {
   return config
 }
 
+const production = process.env.NODE_ENV === 'production'
+
 module.exports = override(
   ...addBabelPlugins('@loadable/babel-plugin', 'react-hot-loader/babel'),
-  addWebpackAlias({
-    'react-dom': '@hot-loader/react-dom'
-  }),
-  addWebpackAlias({
+  !production && addWebpackAlias({
     'react-dom': '@hot-loader/react-dom'
   }),
   resolveModules(),

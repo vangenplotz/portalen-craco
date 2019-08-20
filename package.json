@@ -12,6 +12,7 @@
     "url": "https://github.com/telemark/portalen-craco/issues"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.4.4",
     "@date-io/date-fns": "^1.3.9",
     "@hot-loader/react-dom": "^16.8.6",
     "@loadable/component": "^5.10.2",

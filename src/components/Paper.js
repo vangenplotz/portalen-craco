@@ -8,7 +8,8 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     padding: theme.spacing(2),
     flexGrow: 1,
-    maxWidth: '100%'
+    maxWidth: '100%',
+    overflow: 'hidden'
   }
 }))
 

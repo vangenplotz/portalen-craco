@@ -39,9 +39,9 @@ Deretter kjører men `npm start` (nettleser vil åpne automatisk) og kan jobbe m
 
 Når en ny bruker kommer inn er løpet slik:
 
-# Klient-applikason starter og gjør et kall mot `/api/auth?baseDomain=www.domene.no`, i servicen skrives det da en `baseDomain` og en `nounce` cookie som da kan brukes av andre backend-servicer ved retur fra auth-service
-# Deretter videresender klient-applikasjon bruker til `api/auth` og denne vil sende bruker over til auth-tjeneste for å logge inn
-# Etter vellykket innlogging sendes bruker tilbake til `/api/callback` hvor authentisering valideres, og nødvendig brukerdata samles og pakkes inn i jwt-token, bruker blir da videresendt til `/loadauth/<token>` som blir fanget opp i frontend-applikasjon igjen
-# Her lagres token i localstorage og blir tilgjenneliggjort i react-applicasjon via context, som da vil rendre den innloggede visningen (se `src/containers/App/AppUser.js`), og token blir sendt med i api-spørringer, se `src/Root.js` og `src/helpers/Apiclient.js`
+* Klient-applikason starter og gjør et kall mot `/api/auth?baseDomain=www.domene.no`, i servicen skrives det da en `baseDomain` og en `nounce` cookie som da kan brukes av andre backend-servicer ved retur fra auth-service
+* Deretter videresender klient-applikasjon bruker til `api/auth` og denne vil sende bruker over til auth-tjeneste for å logge inn
+* Etter vellykket innlogging sendes bruker tilbake til `/api/callback` hvor authentisering valideres, og nødvendig brukerdata samles og pakkes inn i jwt-token, bruker blir da videresendt til `/loadauth/<token>` som blir fanget opp i frontend-applikasjon igjen
+* Her lagres token i localstorage og blir tilgjenneliggjort i react-applicasjon via context, som da vil rendre den innloggede visningen (se `src/containers/App/AppUser.js`), og token blir sendt med i api-spørringer, se `src/Root.js` og `src/helpers/Apiclient.js`
 
 Ved neste gangs besøk vil lagret token (fra localstorage) brukes og innhold lastes som etter login over.
